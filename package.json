@@ -1,0 +1,15 @@
+{
+  "name": "login-page",
+  "version": "1.0.0",
+  "description": "Test login page with backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./tailwind/input.css -o ./frontend/output.css --watch"
+  },
+  "author": "Robert Zhao",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}

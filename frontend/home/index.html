@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:80 https://backend-duuy.onrender.com">
+    <title>Home</title>
+    <link rel="stylesheet" href="../output.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-inter overflow-hidden" background="../images/galaxy.jpg">
+    <div class="flex flex-col">
+        <div class="flex flex-col max-w-md w-full h-[60vh] mx-auto my-[15vh] bg-slate-300 dark:bg-slate-900 rounded-3xl shadow-[0px_0px_30px_1px_#e2e8f0] dark:shadow-[0px_0px_30px_1px_#0f172a]">
+            <div class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent text-center text-[35px] mt-10">User Details</div>
+            <div class="text-slate-900 dark:text-slate-200 text-3xl mt-5 detail">Username: </div>
+            <div class="text-slate-900 dark:text-slate-200 text-3xl mt-5 detail">Password: </div>
+            <div class="text-slate-900 dark:text-slate-200 text-3xl mt-5 detail">Token: </div>
+            <div class=" text-3xl mt-5 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent text-center">Thank you for trying the demo! <3</div>
+            <div class="flex flex-col"><button onclick="javascript: void(0)" class="signoutbutton mx-auto text-slate-900 dark:text-slate-200">Signout</button></div>
+        </div>
+        <div class="mobile-support-warning text-slate-50 block sm:hidden mx-auto">
+            Mobile Support Isn't Great...
+        </div>
+        <div class="light-mode-warning text-slate-50 block dark:hidden mx-auto">
+            Light Mode isn't great, made for dark colors (bc of galaxy)
+        </div>
+        
+    </div>
+</body>
+</html>

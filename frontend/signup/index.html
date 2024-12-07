@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:80 https://backend-duuy.onrender.com">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../output.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-inter overflow-hidden" background="../images/galaxy.jpg">
+    <div class="flex flex-col">
+        <div class="flex flex-col max-w-md w-full h-[60vh] mx-auto my-[15vh] bg-slate-300 dark:bg-slate-900 rounded-3xl shadow-[0px_0px_30px_1px_#e2e8f0] dark:shadow-[0px_0px_30px_1px_#0f172a]">
+            <div class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent text-center text-[35px] mt-10">Sign up ✍️</div>
+            <div class="username-password-container flex flex-col font-mono mt-[3vh]">
+                <div class="username-container flex justify-center relative">
+                    <input class="input relative mt-[3vh] max-w-xs w-full mx-auto outline-none text-xl h-[7vh] bg-slate-300 dark:bg-slate-900 border-slate-800 border-2 rounded-lg text-slate-900 dark:text-slate-200 pl-2 focus:border-purple-500 focus:shadow-[0px_0px_25px_0px_#a855f7] shadow-purple-500 duration-300" placeholder="Username" type="text" name="username" autocomplete="on">
+                </div>
+                <div class="password-container flex justify-center">
+                    <input class="input mt-[3vh] max-w-xs w-full mx-auto outline-none text-xl h-[7vh] bg-slate-300 dark:bg-slate-900 border-slate-800 border-2 rounded-lg text-slate-900 dark:text-slate-200 pl-2 focus:border-indigo-500 focus:shadow-[0px_0px_25px_0px_#6366f1] shadow-indigo-500 duration-300" placeholder="Password" type="password" name="password" autocomplete="on">
+                </div>
+            </div>
+            <div class="flex flex-col mx-auto text-xs mt-[6vh] text-red-400">
+                <span class="status">Do not use personal info, all data stored in plaintext. This is a demo</span>
+            </div>
+            <div class="submit-button flex flex-col justify-center items-center">
+                <div class="flex justify-center items-center max-w-xs w-full h-[7vh] bg-gradient-to-r from-indigo-500 to-purple-500 rounded-[0.45rem] hover:-translate-y-0.5 duration-300 hover:shadow-[0px_0px_25px_0px_#6366f1]">
+                    <button onclick="javascript: void(0)" id="login-button" class="bg-slate-300 dark:bg-slate-900 text-slate-900 dark:text-slate-200 max-w-[19.7rem] w-full h-[6.5vh] rounded-[0.4rem] outline-none text-xl hover:bg-transparent focus:bg-transparent duration-300">
+                        Signup
+                        <svg class="spinner hidden animate-spin decoration-slate-50 fill-current text-slate-50" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/>
+                            <path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="font-inter flex mt-3 justify-center">
+                <a class="text-xs text-slate-500 select-none hover:-translate-y-0.5 focus:-translate-y-0.5 duration-300 transition-transform outline-none" href="../">Already Have an Account?</a>
+            </div>
+        </div>
+        <div class="mobile-support-warning text-slate-50 block sm:hidden mx-auto">
+            Mobile Support Isn't Great...
+        </div>
+        <div class="light-mode-warning text-slate-50 block dark:hidden mx-auto">
+            Light Mode isn't great, made for dark colors (bc of galaxy)
+        </div>
+        
+    </div>
+</body>
+</html>
